@@ -1,0 +1,31 @@
+Thema: Defekt-Cluster-Korrektur für photographische Bilder (schwarz-weiß)
+Vorgabe: Programmierung in Matlab 
+
+Ziel: Programmierung einer Defektpixelkorrektur durch einen beschriebenen Algorithmus zur Textursynthese
+
+Randbedingungen:
+- Ein Defektcluster besteht aus 3x3 zusammenhängenden Pixeln, die ungültige Bildinformationen tragen.
+- Mit einer quadratischen Umgebung von 9x9 Pixeln zentral um den Defekt soll eine Korrelationsanalyse
+ gemäß dem Verfahren in einer 30x30 Umgebung um den Defekt herum ausgeführt werden.
+- Für jedes Pixel des Defektclusters ist eine unabhängige Korrelationsberechnung auszuführen
+
+
+Vorgehensweise:
+- Erstellen Sie ein Algorithmenschema für die Defektcluster-Korrektur gemäß der Beschreibung in Efros / Leung. Benutzen Sie den Korrelationskoeffizienten als Ähnlichkeitsmaß zwischen den zu vergleichenden Mustern.
+- Entwickeln Sie den Algorithmus für eine variable Parametrierung von Muster- und Suchumgebungsgröße.
+- Erproben Sie den Algorithmus an einfachen Testmustern (Kanten- / Linienbilder mit verschiedener Ausrichtung und Krümmung, Text, Helligkeitsverlauf, Rauschen).
+- Erstellen Sie eine Entwicklungsumgebung, die ein beliebiges (selbstgewähltes) Bild einliest, und die das Cluster mit der Suchumgebung mehrfach an beliebigen Positionen platziert und den Algorithmus an diesen Stellen erprobt.
+- Für beide Szenarien soll eine maximale und durchschnittliche Abweichung (MSE) als Gütemaß für die Korrektur wiedergeben werden.
+
+- In welchem Signalraum (linear/logarithmisch/gammakorrigiert) soll die Korrektur ausgeführt werden? (Begründung)
+
+- Wie ändert sich die Korrekturgüte mit den Parametern für das Prüfmuster und die Suchumgebung?
+- Wie überträgt der Algorithmus weißes Bildrauschen?
+- Wie reagiert die Korrektur auf Übersteuerung des Bildsignals?
+- Wie wirken sich die Lage, Richtung, Krümmung und Steilheit von Kanten auf das Korrekturergebnis aus?
+
+- Interpretation der Ergebnisse, Verbesserungsvorschläge
+
+Literatur:
+- Alexei A. Efros and Thomas K. Leung , Texture Synthesis by Non-parametric Sampling
+
