@@ -1,0 +1,1 @@
+imCollectRegions(): Interaktive Auswahl beliebiger Rechteckbereiche aus einem Bild
